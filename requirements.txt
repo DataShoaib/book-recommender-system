@@ -1,4 +1,7 @@
+streamlit
 pandas
 numpy
-streamlit
-pickle
+scikit-learn
+matplotlib
+seaborn
+pickle-mixin
