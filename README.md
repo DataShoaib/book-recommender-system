@@ -12,10 +12,12 @@
 
 🔗 **App Link:** [book-recommender-system-shoaib.streamlit.app](https://book-recommender-system-shoaib.streamlit.app)
 
+## 📸 UI Screenshots
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DataShoaib/book-recommender-system/main/assets/Screenshot_2025-07-12-14-38-49-261_com.android.chrome.jpg" width="90%" alt="Screenshot 1">
+  <img src="assets/IMG_20250712_150636.jpg" width="90%" alt="Book Recommender Screenshot 1">
   <br><br>
-  <img src="https://raw.githubusercontent.com/DataShoaib/book-recommender-system/main/assets/Screenshot_2025-07-12-14-39-20-429_com.android.chrome.jpg" width="90%" alt="Screenshot 2">
+  <img src="assets/IMG_20250712_150725.jpg" width="90%" alt="Book Recommender Screenshot 2">
 </p>
 
 ---
