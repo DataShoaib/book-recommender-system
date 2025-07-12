@@ -13,9 +13,9 @@ A content-based book recommender system built using Python and Streamlit, which 
 🔗 **App Link:** [book-recommender-system-shoaib.streamlit.app](https://book-recommender-system-shoaib.streamlit.app)
 
 <p align="center">
-  <img src="assets/screenshot-1.jpg" width="100%" alt="UI Screenshot 1">
+  <img src="https://raw.githubusercontent.com/DataShoaib/book-recommender-system/main/assets/Screenshot_2025-07-12-14-38-49-261_com.android.chrome.jpg" width="90%" alt="Screenshot 1">
   <br><br>
-  <img src="assets/screenshot-2.jpg" width="100%" alt="UI Screenshot 2">
+  <img src="https://raw.githubusercontent.com/DataShoaib/book-recommender-system/main/assets/Screenshot_2025-07-12-14-39-20-429_com.android.chrome.jpg" width="90%" alt="Screenshot 2">
 </p>
 
 ---
