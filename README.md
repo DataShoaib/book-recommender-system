@@ -1,6 +1,6 @@
 # 📚 Book Recommendation System
 
-A content-based book recommender system built using Python and Streamlit, which helps users discover similar books based on their preferences. Just select a book and get top 5 personalized recommendations instantly!
+🔍 This project uses **item-based collaborative filtering** with cosine similarity on a user-book rating matrix to recommend similar books based on what other users have rated.
 
 [![Streamlit App](https://img.shields.io/badge/Streamlit-Live--Demo-red)](https://book-recommender-system-shoaib.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.10-blue)](https://www.python.org/)
