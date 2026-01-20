@@ -74,13 +74,26 @@ streamlit run app.py
 ```
 book-recommender-system/
 │
-├── app.py                # Main Streamlit app
-├── books.csv             # Dataset file
-├── similarity.pkl        # Precomputed similarity matrix
-├── requirements.txt      # Required Python packages
-├── assets/               # Screenshots folder
-└── README.md             # You’re here!
-```
+├── app/
+│   └── app.py                  # Main Streamlit app
+├── Artifacts/                  # Pretrained models and data artifacts
+│   ├── book_with_rating.pkl.gz
+│   ├── pt.pkl
+│   ├── similarities.pkl
+│   └── top_30_popular_book.pkl
+├── assets/                     # Screenshots and demo files
+│   ├── demo.txt
+│   ├── IMG_20250712_150636.jpg
+│   └── IMG_20250712_150725.jpg
+├── data/
+│   └── raw/                    # Raw dataset files
+│       ├── Books.csv.zip
+│       ├── Ratings.csv.zip
+│       └── Users.csv.zip
+├── notebooks/                  # Jupyter notebooks
+├── .gitignore
+├── README.md
+└── requirements.txt
 
 ---
 
