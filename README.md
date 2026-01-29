@@ -1,115 +1,158 @@
-# 📚 Book Recommendation System
+📚 Book Recommendation System
 
-🔍 This project uses **item-based collaborative filtering** with cosine similarity on a user-book rating matrix to recommend similar books based on what other users have rated.
+A real-world Machine Learning–based Book Recommendation System that uses item-based collaborative filtering with cosine similarity to recommend books users are most likely to enjoy, based on collective user behavior.
 
-[![Streamlit App](https://img.shields.io/badge/Streamlit-Live--Demo-red)](https://book-recommender-system-shoaib.streamlit.app/)
-[![Python](https://img.shields.io/badge/Python-3.10-blue)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+Inspired by recommendation engines used in platforms like Amazon and Goodreads.
 
----
 
-## 🚀 Live Demo
 
-🔗 **App Link:** [book-recommender-system-shoaib.streamlit.app](https://book-recommender-system-shoaib.streamlit.app)
 
-## 📸 UI Screenshots
 
-<p align="center">
-  <img src="assets/IMG_20250712_150636.jpg" width="90%" alt="Book Recommender Screenshot 1">
-  <br><br>
-  <img src="assets/IMG_20250712_150725.jpg" width="90%" alt="Book Recommender Screenshot 2">
-</p>
 
----
+🚀 Live Demo
 
-## 🧠 Features
+🔗 Deployed App:
+👉 https://book-recommender-system-shoaib.streamlit.app/
 
-- 🔍 Recommend similar books using content-based filtering
-- 📖 Top 30 most popular books displayed
-- ⚡ Fast & interactive user experience with Streamlit
-- 🧱 Clean and minimal UI design
-- ✅ Deployed and accessible online
+📸 UI Preview
+<p align="center"> <img src="assets/IMG_20250712_150636.jpg" width="90%" alt="Book Recommendation UI"> <br><br> <img src="assets/IMG_20250712_150725.jpg" width="90%" alt="Popular Books Section"> </p>
+🎯 Problem Statement (Real-World ML)
 
----
+With thousands of books available online, users often struggle to discover books that match their interests.
 
-## 📦 Tech Stack
+This project solves the problem of:
 
-- Python
-- Pandas, NumPy
-- Scikit-learn
-- Streamlit
-- Pickle (for model serialization)
+How can we recommend relevant books to users by learning from historical user–book interactions while ensuring scalability and fast response time?
 
----
+🧠 Key Features
 
-## 🛠️ Installation
+📖 Item-Based Collaborative Filtering
 
-```bash
+🔍 Book recommendations using cosine similarity
+
+⭐ Top 30 most popular books displayed
+
+⚡ Fast & interactive UI using Streamlit
+
+🧱 Clean and minimal interface
+
+🌐 Fully deployed and publicly accessible
+
+⚙️ How the Recommendation System Works
+
+User–book interaction data is transformed into a pivot table
+
+Cosine similarity is calculated between books
+
+A precomputed similarity matrix is stored for fast inference
+
+When a user selects a book:
+
+The system recommends Top 5 similar books
+
+Popularity-based recommendations handle cold-start users
+
+🛠️ Tech Stack
+
+Language: Python
+
+Libraries:
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+ML Concepts:
+
+Recommender Systems
+
+Collaborative Filtering
+
+Cosine Similarity
+
+Deployment: Streamlit
+
+Model Storage: Pickle
+
+📦 Installation & Setup
+# Clone the repository
 git clone https://github.com/DataShoaib/book-recommender-system.git
 cd book-recommender-system
+
+# Install dependencies
 pip install -r requirements.txt
-streamlit run app.py
-```
 
----
+# Run the Streamlit app
+streamlit run app/app.py
 
-## 💡 How It Works
-
-- The system uses **cosine similarity** on book feature vectors to find similar titles.
-- It recommends 5 books based on the selected book using a precomputed similarity matrix.
-- The dataset includes book metadata and popularity scores.
-
----
-
-## 📸 Screenshots
-
-| Recommendation Page | Popular Books Section |
-|---------------------|------------------------|
-| ![](assets/screenshot-1.jpg) | ![](assets/screenshot-2.jpg) |
-
----
-
-## 📂 Project Structure
-
-```
+📂 Project Structure
 book-recommender-system/
 │
 ├── app/
-│   └── app.py                  # Main Streamlit app
-├── Artifacts/                  # Pretrained models and data artifacts
-│   ├── book_with_rating.pkl.gz
-│   ├── pt.pkl
-│   ├── similarities.pkl
-│   └── top_30_popular_book.pkl
-├── assets/                     # Screenshots and demo files
+│   └── app.py                  # Main Streamlit application
+│
+├── Artifacts/
+│   └── models/
+│       ├── book_pkl
+│       ├── pt.pkl
+│       ├── similarities.pkl
+│       └── top_30_popular_book.pkl
+│
+├── assets/
 │   ├── demo.txt
 │   ├── IMG_20250712_150636.jpg
 │   └── IMG_20250712_150725.jpg
-├── data/
-│   └── raw/                    # Raw dataset files
-│       ├── Books.csv.zip
-│       ├── Ratings.csv.zip
-│       └── Users.csv.zip
-├── notebooks/                  # Jupyter notebooks
+│
+├── data_raw/
+│   ├── Books.csv.zip
+│   ├── Ratings.csv.zip
+│   └── Users.csv.zip
+│
+├── notebooks/
+│   └── book_recommender_systen.ipynb
+│
 ├── .gitignore
 ├── README.md
 └── requirements.txt
 
----
+📊 Dataset Overview
 
-## 🤝 Contributing
+Books Dataset: ISBN, title, author, publisher
 
-Contributions are welcome! Please fork the repo and submit a pull request.
+Users Dataset: User IDs
 
----
+Ratings Dataset: User–book ratings
 
-## 🧑‍💻 Author
+These datasets simulate real-world recommendation system challenges such as sparsity and popularity bias.
 
-- **Shoaib Akhtar**  
-  🔗 [GitHub - @DataShoaib](https://github.com/DataShoaib)
+📈 Key Learnings
 
----
+Designing recommendation systems used in production
 
-## 📄 License
+Working with sparse user–item matrices
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Similarity-based ML modeling
+
+Model serialization using Pickle
+
+Deploying ML apps with Streamlit
+
+🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork this repository and submit a pull request.
+
+🧑‍💻 Author
+
+Shoaib Akhtar
+🔗 GitHub: https://github.com/DataShoaib
+
+📄 License
+
+This project is licensed under the MIT License.
+See the LICENSE
+ file for details.
+
+⭐ If you found this project helpful, consider starring the repository!

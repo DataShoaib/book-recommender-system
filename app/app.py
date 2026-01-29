@@ -1,4 +1,44 @@
-import streamlit as st
+try:
+    import streamlit as st
+    STREAMLIT_AVAILABLE = True
+except Exception:
+    STREAMLIT_AVAILABLE = False
+
+    class _StubColumn:
+        def __enter__(self):
+            return self
+        def __exit__(self, exc_type, exc, tb):
+            return False
+
+    class _Stub:
+        def set_page_config(self, *a, **k):
+            pass
+        def title(self, txt):
+            print(txt)
+        def subheader(self, txt):
+            print(txt)
+        def markdown(self, txt, **k):
+            print(txt)
+        def image(self, url, width=None):
+            print(f"[image] {url}")
+        def columns(self, n):
+            return [_StubColumn() for _ in range(n)]
+        def selectbox(self, label, options):
+            print(label)
+            selection = options[0] if len(options) > 0 else None
+            print(f"Auto-selected: {selection}")
+            return selection
+        def button(self, label):
+            print(f"[button]{label} auto-pressed")
+            return True
+        def __getattr__(self, name):
+            def _fn(*a, **k):
+                return None
+            return _fn
+
+    st = _Stub()
+    st.sidebar = st
+
 import gzip
 import pandas as pd
 import numpy as np
