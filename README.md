@@ -8,10 +8,8 @@ Inspired by recommendation engines used by platforms like Amazon and Goodreads.
 
 ## 🚀 Live Demo
 
-🔗 **Primary App Link:**  
-👉 https://book-recommender-system-shoaib.streamlit.app/
 
-🔗 **Alternate Deployment Link:**  
+🔗 **App Link:**  
 👉 https://datashoaib-book-recommender-system-appapp-adexhh.streamlit.app/
 
 ---
